@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exam</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>The flex Property</h2>
+        <p>Implement the CSS file and use the flex display the four seats in two rows as the given UI.</p>
+        <div class="flex-container">
+            <div class="row-container">
+                <div class="seat">Seat 1</div>
+                <div class="seat">Seat 2</div>
+            </div>
+            <div class="row-container">
+                <div class="seat">Seat 3</div>
+                <div class="seat">Seat 4</div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .container {
+        border: solid 2px green;
+        height: 500px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: dashed 2px purple;
+        width: 500px;
+        margin: auto;
+    }
+
+    .row-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .seat {
+        background-color: pink;
+        border: solid 1px red;
+        font-size: 30px;
+        color: blue;
+        margin: 20px;
+        padding: 30px;
+    }
+</style>
+
+</html>
